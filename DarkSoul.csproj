@@ -235,6 +235,7 @@
     <Compile Include="Assets\Scripts\Service\GameRoot.cs" />
     <Compile Include="Assets\Scripts\Service\ResSVC.cs" />
     <Compile Include="Assets\Scripts\System\LoginSys.cs" />
+    <Compile Include="Assets\Scripts\System\test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Compond\Shader\MogoSkybox.shader" />
