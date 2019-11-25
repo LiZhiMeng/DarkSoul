@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class GameRoot : MonoBehaviour {
 
+    public LoadingWnd loadingWnd;
+    public static GameRoot Instance = null;
     private void Start()
     {
+        DontDestroyOnLoad(this);
+        Instance = this;
         Init();
     }
 
     public void Init()
     {
+
         //服务模块初始化
         ResSVC resSVC = this.GetComponent<ResSVC>();
         resSVC.Init();
@@ -21,6 +26,8 @@ public class GameRoot : MonoBehaviour {
 
         //进行登录场景
         loginSys.EnterLogin();
+
+
 
     }
 }
